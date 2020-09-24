@@ -111,7 +111,6 @@ func (s *Server) Serve(cmd *cobra.Command, args []string) {
 		panic(err)
 	}
 
-	// HealthCheck
 	movieRepo, err := repository.NewMovieRepository(s.dbMaster, s.dbSlave)
 	if err != nil {
 		panic(err)
